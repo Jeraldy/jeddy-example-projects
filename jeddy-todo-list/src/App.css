@@ -1,0 +1,13 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.todo-input{
+  width: 280px;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
