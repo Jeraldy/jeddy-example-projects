@@ -1,7 +1,7 @@
 {
-  "name": "jeddy-todo-list",
+  "name": "jeddy-redux-quick-start",
   "version": "1.0.0",
-  "description": "jeddy-todo-list",
+  "description": "jeddy-redux-quick-start",
   "private": true,
   "scripts": {
     "start": "npm run jpx&&npm run jrun",
