@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 
-.todo-input{
+input{
   width: 280px;
   padding: 8px;
   border: none;

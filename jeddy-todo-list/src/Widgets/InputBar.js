@@ -15,7 +15,6 @@ const InputBar = ({ todo }) => {
             Row({
                 children: [
                     TextInput({
-                        class: 'todo-input',
                         onKeyUp: (e) => dispatch(handleInput(e.target.value)),
                         value: todo,
                         placeholder: 'Enter your todo',
