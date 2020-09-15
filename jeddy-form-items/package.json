@@ -1,7 +1,7 @@
 {
-  "name": "jeddy-redux-quick-start",
+  "name": "jeddy-form-items",
   "version": "1.0.0",
-  "description": "jeddy-redux-quick-start",
+  "description": "jeddy-form-items",
   "private": true,
   "scripts": {
     "start": "npm run jpx&&npm run jrun",

@@ -14,7 +14,7 @@ const WButton = ({ VButton }) => {
                     Button({
                         children: ['Click Me'],
                         onclick: () => dispatch(handleButton()),
-                        style:{
+                        style: {
                             padding: '8px',
                             border: '1px solid #ccc',
                             borderRadius: '2px',
@@ -28,10 +28,7 @@ const WButton = ({ VButton }) => {
                 align: RowAlignment.SpaceBetween
             })
         ],
-        style: {
-            padding: '20px',
-            border: '1px solid #F1F3F4'
-        }
+        style: { padding: '20px', border: '1px solid #F1F3F4' }
     })
 }
 
