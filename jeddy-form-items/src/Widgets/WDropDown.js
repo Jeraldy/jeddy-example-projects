@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Form';
+import { actions } from '../Reducers/RForm';
 import Select from 'jeddy/dom/Select';
 import Option from 'jeddy/dom/Option';
 import Div from 'jeddy/dom/Div';
@@ -36,7 +36,7 @@ const WDropDown = ({ VDropDown }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.formReducer })
+const mapStateToProps = (state) => ({ ...state.RForm })
 
 export default connect(mapStateToProps)(WDropDown);
 

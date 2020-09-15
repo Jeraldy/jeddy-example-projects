@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Form';
+import { actions } from '../Reducers/RForm';
 import Button from 'jeddy/dom/Button';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
@@ -32,7 +32,7 @@ const WButton = ({ VButton }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.formReducer })
+const mapStateToProps = (state) => ({ ...state.RForm })
 
 export default connect(mapStateToProps)(WButton);
 

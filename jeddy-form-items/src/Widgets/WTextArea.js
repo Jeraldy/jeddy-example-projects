@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Form';
+import { actions } from '../Reducers/RForm';
 import TextArea from 'jeddy/dom/TextArea';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
@@ -30,7 +30,7 @@ const WTextArea = ({ VTextArea }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.formReducer })
+const mapStateToProps = (state) => ({ ...state.RForm })
 
 export default connect(mapStateToProps)(WTextArea);
 

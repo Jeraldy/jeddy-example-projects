@@ -1,7 +1,7 @@
 import { createReducer } from "jeddy/jredux";
 
-const formReducer = createReducer({
-    name: 'Form',
+const RForm = createReducer({
+    name: 'RForm',
     initialState: {
         VTextInput: '',
         VButton: 0,
@@ -37,5 +37,5 @@ const formReducer = createReducer({
     }
 })
 
-export const { reducer, actions } = formReducer;
+export const { reducer, actions } = RForm;
 

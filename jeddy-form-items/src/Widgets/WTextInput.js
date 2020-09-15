@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Form';
+import { actions } from '../Reducers/RForm';
 import TextInput from 'jeddy/dom/TextInput';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
@@ -31,7 +31,7 @@ const WTextInput = ({ VTextInput }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.formReducer })
+const mapStateToProps = (state) => ({ ...state.RForm })
 
 export default connect(mapStateToProps)(WTextInput);
 

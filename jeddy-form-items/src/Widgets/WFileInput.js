@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Form';
+import { actions } from '../Reducers/RForm';
 import FileInput from 'jeddy/dom/FileInput';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
@@ -23,7 +23,7 @@ const WFileInput = ({ VFileInput }) => {
         style: { padding: '20px', border: '1px solid #F1F3F4' }
     })
 }
-const mapStateToProps = (state) => ({ ...state.formReducer })
+const mapStateToProps = (state) => ({ ...state.RForm })
 
 export default connect(mapStateToProps)(WFileInput);
 

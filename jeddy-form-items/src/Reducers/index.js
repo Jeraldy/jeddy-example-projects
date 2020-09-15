@@ -1,3 +1,3 @@
-import { reducer as formReducer } from './Form'
+import { reducer as RForm } from './RForm'
 
-export default { formReducer }
+export default { RForm }
