@@ -22,7 +22,6 @@ const RForm = createReducer({
             return { ...state, VDropDown: action.payload }
         },
         handleFileInput: (state, action) => {
-            console.log(action.payload)
             return { ...state, VFileInput: action.payload }
         },
         handleRadioInput: (state, action) => {

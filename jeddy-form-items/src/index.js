@@ -8,7 +8,7 @@ class Main extends StatefulWidget {
         super(props)
         return this.connect()
     }
-    componentDidMount() { updateState(this) }
+    connectedCallBack() { updateState(this) }
     render() { return App() }
 }
 
