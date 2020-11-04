@@ -9,6 +9,6 @@ const ListView = ({ todoList }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.todoReducer })
+const mapStateToProps = (state) => ({ ...state.RTodo })
 
 export default connect(mapStateToProps)(ListView);

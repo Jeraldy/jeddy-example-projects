@@ -3,7 +3,7 @@ import Button from 'jeddy/dom/Button';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
 import { dispatch, connect } from 'jeddy/jredux';
-import RowAlignment from 'jeddy/layouts/RowAlignment';
+import RowAlign from 'jeddy/layouts/RowAlign';
 const { handleButton } = actions
 
 const WButton = ({ VButton }) => {
@@ -25,7 +25,7 @@ const WButton = ({ VButton }) => {
                     }),
                     `Clicked: ${VButton} times`
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             })
         ],
         style: { padding: '20px', border: '1px solid #F1F3F4' }

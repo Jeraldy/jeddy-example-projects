@@ -1,9 +1,9 @@
 import { actions } from '../Reducers/RForm';
-import TextInput from 'jeddy/dom/TextInput';
+import Input from 'jeddy/dom/Input';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
 import { dispatch, connect } from 'jeddy/jredux';
-import RowAlignment from 'jeddy/layouts/RowAlignment';
+import RowAlign from 'jeddy/layouts/RowAlign';
 const { handleTextInput } = actions
 
 const WTextInput = ({ VTextInput }) => {
@@ -11,7 +11,7 @@ const WTextInput = ({ VTextInput }) => {
         children: [
             Row({
                 children: [
-                    TextInput({
+                    Input({
                         onKeyUp: (e) => dispatch(handleTextInput(e.target.value)),
                         placeholder: 'Write something',
                         style: {
@@ -20,11 +20,12 @@ const WTextInput = ({ VTextInput }) => {
                             borderRadius: '2px',
                             outline: 'none',
                             width: '260px'
-                        }
+                        },
+                        type: "text"
                     }),
                     VTextInput
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             })
         ],
         style: { padding: '20px', border: '1px solid #F1F3F4' }

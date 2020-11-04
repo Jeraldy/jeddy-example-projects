@@ -1,9 +1,9 @@
 import { actions } from '../Reducers/RForm';
-import RadioInput from 'jeddy/dom/RadioInput';
+import Input from 'jeddy/dom/Input';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
 import { dispatch, connect } from 'jeddy/jredux';
-import RowAlignment from 'jeddy/layouts/RowAlignment';
+import RowAlign from 'jeddy/layouts/RowAlign';
 const { handleRadioInput } = actions
 
 const WRadioInput = ({ VRadioInput }) => {
@@ -14,20 +14,22 @@ const WRadioInput = ({ VRadioInput }) => {
                     Row({
                         children: [
                             "M",
-                            RadioInput({
+                            Input({
                                 checked: VRadioInput == 'M',
                                 onclick: () => dispatch(handleRadioInput('M')),
+                                type: "radio"
                             }),
                             "F",
-                            RadioInput({
+                            Input({
                                 checked: VRadioInput == 'F',
                                 onclick: () => dispatch(handleRadioInput('F')),
+                                type: "radio"
                             }),
                         ]
                     }),
                     VRadioInput
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             })
         ],
         style: { padding: '20px', border: '1px solid #F1F3F4' }

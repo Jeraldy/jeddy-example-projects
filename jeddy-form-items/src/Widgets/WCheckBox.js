@@ -1,9 +1,9 @@
 import { actions } from '../Reducers/RForm';
-import CheckBoxInput from 'jeddy/dom/CheckBoxInput';
+import Input from 'jeddy/dom/Input';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
 import { dispatch, connect } from 'jeddy/jredux';
-import RowAlignment from 'jeddy/layouts/RowAlignment';
+import RowAlign from 'jeddy/layouts/RowAlign';
 const { handleCheckBox } = actions
 
 const WCheckBox = ({ VCheckBox }) => {
@@ -11,13 +11,14 @@ const WCheckBox = ({ VCheckBox }) => {
         children: [
             Row({
                 children: [
-                    CheckBoxInput({
+                    Input({
                         onclick: () => dispatch(handleCheckBox()),
-                        checked: VCheckBox
+                        checked: VCheckBox,
+                        type: "checkbox"
                     }),
                     `${VCheckBox ? "CHECKED" : "UNCHECKED"}`
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             })
         ],
         style: { padding: '20px', border: '1px solid #F1F3F4' }

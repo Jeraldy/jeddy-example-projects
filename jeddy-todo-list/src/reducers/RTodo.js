@@ -1,7 +1,7 @@
 import { createReducer } from "jeddy/jredux";
 
-const todoReducer = createReducer({
-    name: 'MyTodos',
+const RTodo = createReducer({
+    name: 'RTodo',
     initialState: {
         todoList: [
             'Wake up at 6am',
@@ -59,5 +59,5 @@ const todoReducer = createReducer({
     }
 })
 
-export const { reducer, actions } = todoReducer;
+export const { reducer, actions } = RTodo;
 

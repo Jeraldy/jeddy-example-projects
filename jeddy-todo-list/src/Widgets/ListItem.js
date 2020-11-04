@@ -1,6 +1,6 @@
 import Div from "jeddy/dom/Div"
 import Row from "jeddy/layouts/Row";
-import RowAlignment from "jeddy/layouts/RowAlignment";
+import RowAlign from "jeddy/layouts/RowAlign";
 import ActionButtons from "./ActionButtons";
 
 const ListItem = (title, index) => {
@@ -11,7 +11,7 @@ const ListItem = (title, index) => {
                     `${index + 1}. ${title}`,
                     ActionButtons(title)
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             }),
         ],
         style: { padding: '8px', borderBottom: '1px solid #ccc', }

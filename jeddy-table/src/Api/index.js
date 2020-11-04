@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/RData';
+import { actions } from '../reducers/RData';
 import axios from 'axios';
 import { dispatch } from 'jeddy/jredux';
 

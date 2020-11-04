@@ -4,7 +4,7 @@ import Option from 'jeddy/dom/Option';
 import Div from 'jeddy/dom/Div';
 import Row from "jeddy/layouts/Row";
 import { dispatch, connect } from 'jeddy/jredux';
-import RowAlignment from 'jeddy/layouts/RowAlignment';
+import RowAlign from 'jeddy/layouts/RowAlign';
 const { handleDropDown } = actions
 
 const WDropDown = ({ VDropDown }) => {
@@ -29,7 +29,7 @@ const WDropDown = ({ VDropDown }) => {
                     }),
                     VDropDown
                 ],
-                align: RowAlignment.SpaceBetween
+                align: RowAlign.SpaceBetween
             })
         ],
         style: { padding: '20px', border: '1px solid #F1F3F4' }

@@ -1,3 +1,3 @@
-import { reducer as todoReducer } from './todos'
+import { reducer as RTodo } from './RTodo'
 
-export default { todoReducer }
+export default { RTodo }

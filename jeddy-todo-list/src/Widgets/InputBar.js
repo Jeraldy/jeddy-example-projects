@@ -1,10 +1,10 @@
 import Card from "jeddy/widgets/Card";
-import TextInput from "jeddy/dom/TextInput";
+import Input from "jeddy/dom/Input";
 import Icons from "jeddy/utils/Icons";
 import Icon from "jeddy/widgets/Icon";
 import Row from "jeddy/layouts/Row";
 import Button from "jeddy/dom/Button";
-import { actions } from "../Reducers/todos";
+import { actions } from "../reducers/RTodo";
 import { dispatch, connect } from "jeddy/jredux";
 
 const { addTodo, handleInput } = actions
@@ -14,10 +14,11 @@ const InputBar = ({ todo }) => {
         children: [
             Row({
                 children: [
-                    TextInput({
+                    Input({
                         onKeyUp: (e) => dispatch(handleInput(e.target.value)),
                         value: todo,
                         placeholder: 'Enter your todo',
+                        type: "text"
                     }),
                     Button({
                         class: 'btn',
@@ -31,6 +32,6 @@ const InputBar = ({ todo }) => {
     })
 }
 
-const mapStateToProps = (state) => ({ ...state.todoReducer })
+const mapStateToProps = (state) => ({ ...state.RTodo })
 
 export default connect(mapStateToProps)(InputBar);
